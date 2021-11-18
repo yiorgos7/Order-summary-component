@@ -1,0 +1,131 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #e0e8ff;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 6.375rem;
+  height: 43.75rem;
+  width: 28.125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card > img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: auto;
+}
+.card > h1 {
+  text-align: center;
+}
+.card > p {
+  color: #7280a7;
+  text-align: center;
+  margin-left: 4.75rem;
+  margin-right: 4.75rem;
+}
+
+.order-item {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  background-color: #F8F9FE;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+.order-item p {
+  margin-left: -7rem;
+}
+.order-item img {
+  width: 2.9375rem;
+  height: 2.9375rem;
+}
+.order-item button {
+  background: none;
+  border: none;
+  color: #3829e0;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.order-item button:hover, .order-item button:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pay {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: #3829e0;
+  color: white;
+  font-weight: 900;
+  padding: 1rem 7rem;
+  border-radius: 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.pay:hover, .pay:active {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.cancel {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background: none;
+  font-weight: 900;
+  opacity: 0.5;
+}
+.cancel:hover, .cancel:active {
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
+
+  .card {
+    width: 20.4378rem;
+    height: 35.3125rem;
+    margin-top: 3rem;
+  }
+
+  .pay {
+    padding: 1rem 4.5rem;
+    margin-top: 1rem;
+  }
+
+  .cancel {
+    margin-top: 1rem;
+  }
+
+  .card > p {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .card .order-item p {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
